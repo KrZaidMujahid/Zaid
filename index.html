@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical 3</title>
+</head>
+<body>
+  <p>
+    <a href = "prac2.html">second</a>
+    <a href = "prac3.html">third_prac</a>
+    <pre>
+    <div>
+#include &lt;stdio.h>
+
+int main(){
+  /* variable definition */
+  int a, b;
+  int c;
+  float f;
+  char nameFirstChar, nameLastChar;
+  int currentYear, age;
+  int dd, mm, yy;
+  int years, months, days;
+  int m, d;
+
+// My faculty ID
+  printf("My Faculty ID is : 24DPCO209\n");
+
+// My Enrollment number
+  printf("My Enrollment ID is : GL9266\n"); 
+
+// My name
+  printf("My Name is : Zaid Mujahid\n");
+  nameFirstChar = 'Z';
+  nameLastChar = 'D';
+  printf("My first name starts with %c and ends with %c\n", nameFirstChar, nameLastChar);
+  currentYear = 2025;
+  dd = 19;
+  mm = 9;
+  yy = 2006 ;
+  printf("My Date of Birth is: %d/%d/%d\n", dd, mm,  yy);
+  printf("Current Year is: %d\n", currentYear);
+  printf("My Year of Birth is: %d\n", yy);
+
+  /* age = currentYear - yy; */
+  /* printf("My age is %d years\n", age); */
+
+
+  /* Current date and month */
+  d = 1;
+  m = 9;
+
+
+  /* printf("What is your Date of birth (enter in format dd/mm/yyyy): "); */
+  /* scanf("%d/%d/%d", &dd, &mm, &yy); */
+  /* printf("What is date today (enter in format dd/mm/yyyy): "); */
+  /* scanf("%d/%d/%d", &d, &m, &y); */
+
+
+  /* calculating age by taking 30 days in a months */
+
+  years = currentYear - yy;
+  if (mm &lt; m){
+    months = m - mm;
+  }
+  else {
+    years -= 1;
+    months = 12 - mm + m;
+  }
+  if (dd &lt; d){
+    days = d - dd;
+  }
+  else {
+    days = 30  - dd + d;
+    months -= 1;
+  }
+  printf("I am %d years, %d months and %d days old\n", years, months, days);
+
+  /* actual initialization */
+  a = dd;
+  b = mm;
+  c = a + b;
+  printf("value of c : %d \n", c);
+  f = dd/mm;
+  printf("value of f : %f \n", f);
+  return 0;
+}
+
+
+        </div>
+    </pre>
+  </p>
+</body>
+</html>
+

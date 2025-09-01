@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <div>
+  <pre>
+#include &lt;stdio.h>
+
+//main function
+int main(){
+  int a, b, c;
+  float f;
+  char nameFirstChar, nameLastChar;
+  int currentYear, age;
+  int dd, mm, yy;
+  printf("My Faculty ID is 24DPCO209\n");
+  printf("My Enrollment ID is GL9266\n");
+  printf("My Name is ZAID MUJAHID\n");
+  nameFirstChar = 'Z';
+  nameLastChar = 'D';
+  printf("My First Name starts with %c and ends with %c\n", nameFirstChar, nameLastChar);
+  currentYear = 2025;
+  dd = 19;
+  mm = 9;
+  yy = 2006;
+  printf("My Date of Birth is: %d/%d/%d\n", dd, mm, yy);
+  printf("My Year of Birth is: %d\n", yy);
+  age = currentYear - yy;
+  printf("My Age is: %d\n", age);
+  int x, w, z;
+  int d = 1, m = 9, y = 2025;
+  x = d - dd;
+  w = m - mm;
+  z = y - yy;
+  if (x < 0) {
+    x += 30;
+    w--;
+  }
+  if (w < 0) {
+    w += 12;
+    z--;
+  }
+  printf("I am %d years, %d months and %d days old\n", z, w, x);
+  a = dd;
+  b = mm;
+  c = a + b;
+  printf("Value of c: %d\n", c);
+  f = dd/mm;
+  printf("Value of f: %f\n", f);
+  return 0;
+}
+
+  </pre>  
+  </div>
+</body>
+</html>
